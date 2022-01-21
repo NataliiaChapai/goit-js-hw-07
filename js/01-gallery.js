@@ -32,14 +32,14 @@ function onGalleryItemClick(event) {
         return;
     }
     
-    const instance = basicLightbox.create(`
+    const imageShow = basicLightbox.create(`
     <img src="${imageSrc}">
     `)
-    instance.show()
+    imageShow.show()
 
     document.addEventListener("keydown", event => {
         if (event.key != 'Escape') { return;}
-    instance.close()
+    imageShow.close()
     });
     
 }
